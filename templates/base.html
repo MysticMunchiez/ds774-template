@@ -53,8 +53,10 @@
     <!-- Loop to set proper link active in Navbar -->
     {% set active_page = active_page|default('home') -%}
     <div class="collapse navbar-collapse" id="navbar">
+      <a href="https://html-zackhill.herokuapp.com/">
       <img style="filter:brightness(0) invert(1);" src="https://cdn.shopify.com/s/files/1/0902/2982/files/TRIPLE_D_LOGO_1_500x.png?v=1613036192" width="30" height="30" />
       <h3 style="color:white; margin-right: 30px">ynamite Kicks</h3>
+      </a>
     <div class="navbar-nav mr-auto">
         {% for href, id, caption in navigation_bar %}
         <a {% if id == active_page %} class="nav-link active" 
