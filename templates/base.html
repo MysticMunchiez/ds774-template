@@ -26,9 +26,6 @@
   <!-- jumbotron -->
   <div class="jumbotron text-center">
 
-    <!-- rounded -->
-    <!-- <img src="{{url_for('static',filename='UNH.png')}}" class="rounded-circle" alt=""> -->
-
     <h1>Dynamite Kicks</h1>
     <p>The Leaders in Footwear</p>
   </div>
@@ -58,6 +55,7 @@
     <!-- Loop to set proper link active in Navbar -->
     {% set active_page = active_page|default('home') -%}
     <div class="collapse navbar-collapse" id="navbar">
+      <h1>Dynamite Kicks</h1>
     <div class="navbar-nav mr-auto">
         {% for href, id, caption in navigation_bar %}
         <a {% if id == active_page %} class="nav-link active" 
